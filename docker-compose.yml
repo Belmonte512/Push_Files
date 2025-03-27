@@ -10,12 +10,5 @@ services:
       WORDPRESS_DB_PASSWORD: wordpress123!
       WORDPRESS_DB_NAME: wp-database
     volumes:
-      - wordpress:/var/www/html
+      - /mnt/efs/wordpress:/var/www/html
 
-volumes:
-  wordpress:
-    driver: local
-    driver_opts:
-      type: nfs
-      o: addr=fs-0080a90d7449ed2ee.efs.us-east-1.amazonaws.com,nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2
-      device: fs-0080a90d7449ed2ee.efs.us-east-1.amazonaws.com:/
