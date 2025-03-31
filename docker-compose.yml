@@ -10,7 +10,7 @@ services:
       WORDPRESS_DB_PASSWORD: wordpress123!
       WORDPRESS_DB_NAME: tb_wp_rds
     volumes:
-      - /home/ec2-user/wordpress:/var/www/html
+      - /wordpress:/var/www/html
     networks:
       - tunel
 
