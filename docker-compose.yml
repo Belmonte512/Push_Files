@@ -7,7 +7,7 @@ services:
     environment:
       WORDPRESS_DB_HOST: wp-database-project.c3c4222g6kve.us-east-1.rds.amazonaws.com
       WORDPRESS_DB_USER: admin
-      WORDPRESS_DB_PASSWORD: WORDPRESS123!
+      WORDPRESS_DB_PASSWORD: wordpress123!
       WORDPRESS_DB_NAME: tb_wp_database
     volumes:
       - /wordpress:/var/www/html
